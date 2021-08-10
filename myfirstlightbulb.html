@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MY FIRST BULB</title>
+    <style>
+        .on {
+            width: 221px;
+            margin-left: auto;
+            display: block;
+            font-size: 24px;
+            margin-top: 271px;
+            margin-right: 2px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: baloo bhai, cursive;
+            margin-right: 768px;
+        }
+
+        .off {
+            width: 221px;
+            margin-right: auto;
+            display: block;
+            font-size: 24px;
+            font-family: baloo bhai, cursive;
+            margin-top: -64px;
+            margin-left: 768px;
+        }
+
+        div {
+            position: relativ;
+        }
+
+        #myImage {
+            width: 181px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2>What Can JavaScript Do?</h2> -->
+
+    <!-- <p>JavaScript can change HTML attribute values.</p> -->
+
+    <!-- <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p> -->
+    <button class="on"
+        onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the
+        light</button>
+    <div>
+        <img id="myImage" src='https://www.w3schools.com/js/pic_bulboff.gif'>
+    </div>
+
+    <button class="off"
+        onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the
+        light</button>
+
+</body>
+
+</html>
